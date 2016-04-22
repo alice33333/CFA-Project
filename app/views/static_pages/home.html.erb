@@ -1,0 +1,23 @@
+
+<!-- Home page HTML display -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | Ruby on Rails Tutorial Sample App</title>
+  </head>
+  <body>
+    <div class="center jumbotron">
+  <h2>Welcome to the Sample App</h2>
+
+  <h3>
+    This is the home page for the
+    <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h3>
+
+  <%= link_to "Log in now!", '#', class: "btn btn-lg btn-primary" %>
+  <!-- For creating sign up. Need to move into Director class -->
+   <%= link_to "Sign up now!", 'signup', class: "btn btn-lg btn-primary" %>
+</div>
+  </body>
+</html>

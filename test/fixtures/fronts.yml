@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  question_one: 1.5
+  question_one_total: 1
+  question_two: 1.5
+  question_two_total: 1
+  question_three: 1.5
+  question_three_total: 1
+  question_four: 1.5
+  question_four_total: 1
+  employee_total: 1
+  current_result: 1.5
+  question_number: 1
+  critique_date: 2016-04-05
+  emp_id: 1
+
+two:
+  question_one: 1.5
+  question_one_total: 1
+  question_two: 1.5
+  question_two_total: 1
+  question_three: 1.5
+  question_three_total: 1
+  question_four: 1.5
+  question_four_total: 1
+  employee_total: 1
+  current_result: 1.5
+  question_number: 1
+  critique_date: 2016-04-05
+  emp_id: 1

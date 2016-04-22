@@ -1,0 +1,56 @@
+
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h4>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h4>
+      <h5>
+        <% if @user.role == 0 %>
+          <h3>Director</h3>
+        <% end %>
+        <% if @user.role == 1 %>
+          <h3>Front of House</h3>
+          <h3>Team Member</h3>
+        <% end %>
+        <% if @user.role == 2 %>
+          <h3>Back of House</h3>
+          <h3>Team Member</h3>
+        <% end %>
+         <% if @user.role == 3 %>
+          <h3>Manager</h3>
+        <% end %>
+         <% if @user.role == 4 %>
+          <h3>Front of House</h3>
+          <h3>Shift Leader</h3>
+        <% end %>
+         <% if @user.role == 5 %>
+          <h3>Back of House</h3>
+          <h3>Shift Leader</h3>
+        <% end %>
+      </h5>
+      
+      <h2> <%= @user.question_one_new %> </h2>
+      <h2> <%= @user.question_two %> </h2>
+      <h2> <%= @user.question_three%> </h2>
+      <h2> <%= @user.question_four%> </h2>
+      <h2> <%= @user.question_five%> </h2>
+      
+      <div class="col-md-3 col-md-offset-4">
+      <% if @user.role == 3 || @user.role == 0 %>
+       <%= link_to "Evaluate Team Members", all_path, class: "btn btn-lg btn-default" %>
+      <% end %>
+      
+      <% if @user.role == 4 %>
+       <%= link_to "Evaluate Front of House", front_path, class: "btn btn-lg btn-default" %>
+      <% end %>
+      
+      <% if @user.role == 5 %>
+       <%= link_to "Evaluate Back of House", back_path, class: "btn btn-lg btn-default" %>
+      <% end %>
+      </div>
+    </section>
+  </aside>
+</div>
